@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Brain Gym</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-900 font-sans">
-
-  <!-- Header -->
-  <header class="bg-indigo-600 text-white p-6 text-center">
-    <h1 class="text-3xl font-bold">🧠 Brain Gym</h1>
-    <p class="text-lg mt-2">Train your brain, daily!</p>
+  <header class="bg-indigo-600 text-white px-6 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-4">
+      <img src="assets/brain-gym-logo.webp" alt="Brain Gym Logo" class="w-14 h-14 rounded-full" />
+      <div>
+        <h1 class="text-3xl font-bold">Brain Gym</h1>
+        <p class="text-sm text-indigo-100">Train your brain, daily!</p>
+      </div>
+    </div>
   </header>
 
-  <!-- About -->
   <section class="p-8 text-center">
     <h2 class="text-2xl font-semibold mb-4">What is Brain Gym?</h2>
-    <p class="max-w-xl mx-auto text-gray-700">Brain Gym is a gamified Android app designed to boost your memory, focus, logic, and cognitive speed. Daily challenges, XP rewards, and personal progress tracking keep your mind sharp and engaged.</p>
+    <p class="max-w-xl mx-auto text-gray-700">
+      Brain Gym is a gamified Android app designed to boost your memory, focus, logic, and cognitive speed.
+      Daily challenges, XP rewards, and personal progress tracking keep your mind sharp and engaged.
+    </p>
   </section>
 
-  <!-- Features -->
   <section class="bg-gray-100 p-8">
     <h2 class="text-2xl font-semibold text-center mb-6">Features</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -39,29 +43,42 @@
     </div>
   </section>
 
-  <!-- Screenshots Placeholder -->
   <section class="p-8 text-center">
-  <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-    <img src="assets/home-image.webp" alt="Home Screen" class="rounded shadow">
-    <img src="assets/progress-image.webp" alt="Progress Screen" class="rounded shadow">
-    <img src="assets/training-image.webp" alt="Training Screen" class="rounded shadow">
+    <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <img src="assets/home-image.webp" alt="Home Screen" class="rounded shadow">
+      <img src="assets/progress-image.webp" alt="Progress Screen" class="rounded shadow">
+      <img src="assets/training-image.webp" alt="Training Screen" class="rounded shadow">
+    </div>
+  </section>
+
+  <section class="p-8 bg-indigo-50 text-center">
+    <h2 class="text-xl font-bold mb-2">Ready to Train?</h2>
+    <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full text-lg hover:bg-indigo-700 transition">📱 Get it on Google Play</a>
+  </section>
+
+  <section class="bg-white py-12 text-center">
+  <h2 class="text-2xl font-bold mb-4">About the Developer</h2>
+  <div class="max-w-3xl mx-auto px-4">
+    <img src="assets/dev-avatar.webp" alt="Developer Avatar" class="w-24 h-24 mx-auto rounded-full shadow mb-4" />
+    <p class="text-lg font-semibold">Abhilash Asok</p>
+    <p class="text-sm text-gray-500 mb-1">Senior System Engineer • Android Enthusiast</p>
+    <p class="text-sm text-gray-400 mb-4">📍 Bangalore, India | London, United Kingdom</p>
+    <p class="text-gray-700">
+      I created Brain Gym as a passion project to blend gamification with mental wellness.
+      It’s designed for anyone who wants to stay sharp, build habits, and track personal growth through daily brain training.
+    </p>
   </div>
 </section>
 
-  <!-- Download -->
-  <section class="p-8 bg-indigo-50 text-center">
-    <h2 class="text-xl font-bold mb-2">Ready to Train?</h2>
-    <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank"
-   class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full text-lg hover:bg-indigo-700 transition">
-   📱 Get it on Google Play
-</a>
+
+  <section class="bg-gray-100 py-12 px-4 text-center">
+    <h2 class="text-2xl font-bold mb-2">Contact</h2>
+    <p class="text-gray-700">Reach out anytime at <a href="mailto:abhilashpa39@gmail.com" class="text-indigo-600 underline">abhilashpa39@gmail.com</a></p>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center p-4">
     <p>© 2025 Brain Gym | <a href="#" class="underline">GitHub</a></p>
   </footer>
-
 </body>
 </html>
