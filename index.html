@@ -4,33 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Brain Gym</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-900 font-sans">
-  <header class="bg-indigo-600 text-white px-6 py-4 shadow">
+<body class="bg-white font-sans text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-[#0f172a] text-[#f8fafc] px-6 py-4 shadow">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-3">
         <img src="assets/brain-gym-logo.webp" alt="Brain Gym Logo" class="w-10 h-10 rounded-full" />
         <h1 class="text-xl font-bold">Brain Gym</h1>
       </div>
       <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#features" class="hover:underline">Features</a>
-        <a href="#screenshots" class="hover:underline">Screenshots</a>
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="#features" class="hover:text-[#06b6d4]">Features</a>
+        <a href="#screenshots" class="hover:text-[#06b6d4]">Screenshots</a>
+        <a href="#about" class="hover:text-[#06b6d4]">About</a>
+        <a href="#contact" class="hover:text-[#06b6d4]">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="p-8 text-center">
-    <h2 class="text-2xl font-semibold mb-4">What is Brain Gym?</h2>
-    <p class="max-w-xl mx-auto text-gray-700">
-      Brain Gym is a gamified Android app designed to boost your memory, focus, logic, and cognitive speed.
-      Daily challenges, XP rewards, and personal progress tracking keep your mind sharp and engaged.
-    </p>
+  <!-- HERO SECTION -->
+  <section class="bg-[#0f172a] text-[#f8fafc] px-6 py-12">
+    <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <!-- LEFT -->
+      <div class="max-w-xl text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Train Your Brain, Every Day</h1>
+        <p class="text-lg text-gray-300 mb-6">Daily challenges to sharpen your brain and track your progress.</p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank"
+           class="bg-[#06b6d4] hover:bg-[#38bdf8] transition px-6 py-3 rounded-md font-semibold text-white text-lg mb-6 inline-block">
+          Start now
+        </a>
+
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
+          <span class="text-yellow-400 text-xl">★ ★ ★ ★ ★</span>
+          <p class="text-sm text-gray-400">4.8 rating – 5,000+ users</p>
+        </div>
+
+        <div class="flex justify-center md:justify-start gap-4 mt-2">
+          <img src="assets/satisfaction-badge.webp" alt="100% Satisfaction" class="h-20" />
+          <img src="assets/free-forever.png" alt="100% Free Forever" class="h-20" />
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="w-full md:w-1/2 relative">
+        <img src="assets/phone-mockup.webp" alt="App preview" class="w-full max-w-sm mx-auto" />
+      </div>
+    </div>
   </section>
 
-  <section id="features" class="bg-gray-100 p-8">
+  <!-- FEATURES SECTION -->
+  <section id="features" class="bg-gray-100 p-8 text-gray-800">
     <h2 class="text-2xl font-semibold text-center mb-6">Features</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
       <div class="p-4 bg-white shadow rounded">
@@ -48,7 +75,8 @@
     </div>
   </section>
 
-  <section id="screenshots" class="p-8 text-center">
+  <!-- SCREENSHOTS SECTION -->
+  <section id="screenshots" class="p-8 text-center text-gray-800">
     <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
       <img src="assets/home-image.webp" alt="Home Screen" class="rounded shadow">
@@ -57,34 +85,41 @@
     </div>
   </section>
 
+  <!-- CTA SECTION -->
   <section class="p-8 bg-indigo-50 text-center">
-  <h2 class="text-xl font-bold mb-2">Ready to Train?</h2>
-  <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank">
-    <img src="assets/google-play-badge_locale_en.webp" alt="Get it on Google Play" class="mx-auto w-48 md:w-56" />
-  </a>
-</section>
+    <h2 class="text-xl font-bold mb-2 text-gray-900">Ready to Train?</h2>
+    <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank">
+      <img src="assets/google-play-badge_locale_en.webp" alt="Get it on Google Play" class="mx-auto w-48 md:w-56" />
+    </a>
+  </section>
 
-
-  <section id="about" class="bg-white py-12 text-center">
+  <!-- ABOUT DEVELOPER -->
+  <section id="about" class="bg-white py-12 text-center text-gray-800">
     <h2 class="text-2xl font-bold mb-4">About the Developer</h2>
     <div class="max-w-3xl mx-auto px-4">
       <img src="assets/dev-avatar.webp" alt="Developer Avatar" class="w-24 h-24 mx-auto rounded-full shadow mb-4" />
       <p class="text-lg font-semibold">Abhilash Asok</p>
-      <p class="text-sm text-gray-500 mb-1">Senior System Engineer • Android Enthusiast</p>
-      <p class="text-sm text-gray-400 mb-4">📍 Bangalore, India | London, United Kingdom</p>
+      <p class="text-sm text-gray-600 mb-1">Senior System Engineer • Android Enthusiast</p>
+      <p class="text-sm text-gray-500 mb-4">📍 Bangalore, India | London, United Kingdom</p>
       <p class="text-gray-700">
         I created Brain Gym as a passion project to blend gamification with mental wellness. It’s designed for anyone who wants to stay sharp, build habits, and track personal growth through daily brain training.
       </p>
     </div>
   </section>
 
-  <section id="contact" class="bg-gray-100 py-12 px-4 text-center">
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="bg-gray-100 py-12 px-4 text-center text-gray-800">
     <h2 class="text-2xl font-bold mb-2">Contact</h2>
-    <p class="text-gray-700">Reach out anytime at <a href="mailto:abhilashpa39@gmail.com" class="text-indigo-600 underline">abhilashpa39@gmail.com</a></p>
+    <p class="text-gray-700">
+      Reach out anytime at 
+      <a href="mailto:abhilashpa39@gmail.com" class="text-indigo-600 underline">abhilashpa39@gmail.com</a>
+    </p>
   </section>
 
-  <footer class="bg-gray-800 text-white text-center p-4">
-    <p>© 2025 Brain Gym | <a href="#" class="underline">GitHub</a></p>
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-gray-300 text-center p-4">
+    <p>© 2025 Brain Gym | <a href="#" class="text-indigo-300 underline">GitHub</a></p>
   </footer>
+
 </body>
 </html>
