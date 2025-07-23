@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +8,7 @@
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-white font-sans text-gray-800">
 
   <!-- HEADER -->
@@ -35,7 +37,7 @@
         <p class="text-lg text-gray-300 mb-6">Daily challenges to sharpen your brain and track your progress.</p>
 
         <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank"
-           class="bg-[#06b6d4] hover:bg-[#38bdf8] transition px-6 py-3 rounded-md font-semibold text-white text-lg mb-6 inline-block">
+          class="bg-[#06b6d4] hover:bg-[#38bdf8] transition px-6 py-3 rounded-md font-semibold text-white text-lg mb-6 inline-block">
           Start now
         </a>
 
@@ -52,7 +54,8 @@
 
       <!-- RIGHT -->
       <div class="w-full md:w-1/2 relative">
-        <img src="assets/phone-mockup.webp" alt="App preview" class="w-full max-w-sm mx-auto" />
+        <img src="assets/phone-mockup.webp" alt="App preview"
+          class="w-full max-w-sm mx-auto transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" />
       </div>
     </div>
   </section>
@@ -80,64 +83,74 @@
   <section id="screenshots" class="p-8 text-center text-gray-800">
     <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <img src="assets/home-image.webp" alt="Home Screen" class="rounded shadow">
-      <img src="assets/progress-image.webp" alt="Progress Screen" class="rounded shadow">
-      <img src="assets/training-image.webp" alt="Training Screen" class="rounded shadow">
+
+      <img src="assets/home-image.webp" alt="Home Screen"
+        class="rounded shadow transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" />
+
+      <img src="assets/progress-image.webp" alt="Progress Screen"
+        class="rounded shadow transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" />
+
+      <img src="assets/training-image.webp" alt="Training Screen"
+        class="rounded shadow transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" />
+
     </div>
   </section>
 
+
   <!-- CTA SECTION -->
-<section class="bg-indigo-50 px-6 py-16 text-center">
-  <div class="max-w-2xl mx-auto">
-    <h2 class="text-3xl font-extrabold text-indigo-900 mb-4">Ready to Train Your Brain?</h2>
-    <p class="text-gray-600 text-lg mb-6">
-      Join thousands of users improving memory, focus, and logic through daily brain workouts.
-      Completely free, no sign-up required.
-    </p>
-    <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank">
-      <img src="assets/google-play-badge_locale_en.webp" alt="Get it on Google Play"
-           class="mx-auto w-52 hover:scale-105 transition-transform duration-200" />
-    </a>
-  </div>
-</section>
-
-
- <!-- ABOUT THE CREATORS -->
-<section id="about" class="bg-white py-12 text-center text-gray-800">
-  <h2 class="text-2xl font-bold mb-4">About the Creators</h2>
-  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
-
-    <!-- Abhilash -->
-    <div>
-      <img src="assets/dev-avatar.webp" alt="Abhilash Avatar" class="w-24 h-24 mx-auto rounded-full shadow mb-4" />
-      <p class="text-lg font-semibold">Abhilash Asok</p>
-      <p class="text-sm text-gray-600 mb-1">Senior System Engineer • Android Enthusiast</p>
-      <p class="text-sm text-gray-500 mb-4">📍 Bangalore, India | London, United Kingdom</p>
-      <p class="text-gray-700">
-        I created Brain Gym to blend gamification with mental wellness. It’s designed to help anyone build habits and stay mentally active through daily challenges.
+  <section class="bg-indigo-50 px-6 py-16 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-indigo-900 mb-4">Ready to Train Your Brain?</h2>
+      <p class="text-gray-600 text-lg mb-6">
+        Join thousands of users improving memory, focus, and logic through daily brain workouts.
+        Completely free, no sign-up required.
       </p>
+      <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank">
+        <img src="assets/google-play-badge_locale_en.webp" alt="Get it on Google Play"
+          class="mx-auto w-52 hover:scale-105 transition-transform duration-200" />
+      </a>
     </div>
+  </section>
 
-    <!-- Devika -->
-    <div>
-      <img src="assets/devika-avatar.webp" alt="Devika Avatar" class="w-24 h-24 mx-auto rounded-full shadow mb-4" />
-      <p class="text-lg font-semibold">Devika Abhilash</p>
-      <p class="text-sm text-gray-600 mb-1">Graphics Designer • UI Creative</p>
-      <p class="text-sm text-gray-500 mb-4">📍 India</p>
-      <p class="text-gray-700">
-        I crafted Brain Gym’s visual identity to be clean, calming, and inspiring—making every session feel rewarding and intuitive for the user.
-      </p>
+
+  <!-- ABOUT THE CREATORS -->
+  <section id="about" class="bg-white py-12 text-center text-gray-800">
+    <h2 class="text-2xl font-bold mb-4">About the Creators</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
+
+      <!-- Abhilash -->
+      <div>
+        <img src="assets/dev-avatar.webp" alt="Abhilash Avatar" class="w-24 h-24 mx-auto rounded-full shadow mb-4" />
+        <p class="text-lg font-semibold">Abhilash Asok</p>
+        <p class="text-sm text-gray-600 mb-1">Senior System Engineer • Android Enthusiast</p>
+        <p class="text-sm text-gray-500 mb-4">📍 Bangalore, India | London, United Kingdom</p>
+        <p class="text-gray-700">
+          I created Brain Gym to blend gamification with mental wellness. It’s designed to help anyone build habits and
+          stay mentally active through daily challenges.
+        </p>
+      </div>
+
+      <!-- Devika -->
+      <div>
+        <img src="assets/devika-avatar.webp" alt="Devika Avatar" class="w-24 h-24 mx-auto rounded-full shadow mb-4" />
+        <p class="text-lg font-semibold">Devika Abhilash</p>
+        <p class="text-sm text-gray-600 mb-1">Graphics Designer • UI Creative</p>
+        <p class="text-sm text-gray-500 mb-4">📍 India</p>
+        <p class="text-gray-700">
+          I crafted Brain Gym’s visual identity to be clean, calming, and inspiring—making every session feel rewarding
+          and intuitive for the user.
+        </p>
+      </div>
+
     </div>
-
-  </div>
-</section>
+  </section>
 
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="bg-gray-100 py-12 px-4 text-center text-gray-800">
     <h2 class="text-2xl font-bold mb-2">Contact</h2>
     <p class="text-gray-700">
-      Reach out anytime at 
+      Reach out anytime at
       <a href="mailto:abhilashpa39@gmail.com" class="text-indigo-600 underline">abhilashpa39@gmail.com</a>
     </p>
   </section>
@@ -148,4 +161,5 @@
   </footer>
 
 </body>
+
 </html>
