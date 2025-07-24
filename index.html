@@ -80,21 +80,32 @@
   </section>
 
   <!-- SCREENSHOTS SECTION -->
-  <section id="screenshots" class="p-8 text-center text-gray-800">
-    <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+  <section id="screenshots" class="p-8 text-gray-800">
+  <h2 class="text-2xl font-semibold text-center mb-4">Screenshots</h2>
 
+  <!-- Mobile: Horizontal Scroll -->
+  <div class="md:hidden overflow-x-auto">
+    <div class="flex gap-4 w-max px-2">
       <img src="assets/home-image.webp" alt="Home Screen"
-        class="rounded shadow transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" />
-
+           class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
       <img src="assets/progress-image.webp" alt="Progress Screen"
-        class="rounded shadow transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" />
-
+           class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
       <img src="assets/training-image.webp" alt="Training Screen"
-        class="rounded shadow transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" />
-
+           class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
     </div>
-  </section>
+  </div>
+
+  <!-- Desktop: 3-column Grid -->
+  <div class="hidden md:grid grid-cols-3 gap-6 max-w-5xl mx-auto mt-6">
+    <img src="assets/home-image.webp" alt="Home Screen"
+         class="rounded shadow hover:scale-105 transition-transform duration-300" />
+    <img src="assets/progress-image.webp" alt="Progress Screen"
+         class="rounded shadow hover:scale-105 transition-transform duration-300" />
+    <img src="assets/training-image.webp" alt="Training Screen"
+         class="rounded shadow hover:scale-105 transition-transform duration-300" />
+  </div>
+</section>
+
 
 
   <!-- CTA SECTION -->
