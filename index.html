@@ -7,6 +7,38 @@
   <title>Brain Gym</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  #slideset {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  #slideset > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: slideLeft;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  #slideset > *:nth-child(1) { animation-delay: 0s; }
+  #slideset > *:nth-child(2) { animation-delay: 4s; }
+  #slideset > *:nth-child(3) { animation-delay: 8s; }
+
+  @keyframes slideLeft {
+    0% { left: 100%; opacity: 0; z-index: 1; }
+    4% { left: 0%; opacity: 1; z-index: 2; }
+    33.33% { left: 0%; opacity: 1; z-index: 2; }
+    37.33% { left: -100%; opacity: 0; z-index: 1; }
+    100% { left: -100%; opacity: 0; z-index: 1; }
+  }
+</style>
+
 </head>
 
 <body class="bg-white font-sans text-gray-800">
@@ -53,11 +85,14 @@
       </div>
     </div>
 
-    <!-- RIGHT (mobile: shown second) -->
-    <div class="w-full md:w-1/2 relative">
-      <img src="assets/phone-mockup.webp" alt="App preview"
-        class="w-full max-w-sm mx-auto transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" />
-    </div>
+<!-- RIGHT: Transparent Vertical Sliding Carousel -->
+<div class="w-full md:w-1/2 relative">
+  <div id="slideset" class="max-w-sm mx-auto rounded shadow">
+    <img src="assets/phone-mockup.webp" alt="Slide 1" class="object-contain w-full h-full" />
+    <img src="assets/phone-mockup1.webp" alt="Slide 2" class="object-contain w-full h-full" />
+    <img src="assets/phone-mockup2.webp" alt="Slide 3" class="object-contain w-full h-full" />
+  </div>
+</div>
 
   </div>
 </section>
