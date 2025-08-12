@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,243 +7,197 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-  #slideset {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-  }
+    #slideset {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
 
-  #slideset > * {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation-name: slideLeft;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
+    #slideset > * {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      animation-name: slideLeft;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
 
-  #slideset > *:nth-child(1) { animation-delay: 0s; }
-  #slideset > *:nth-child(2) { animation-delay: 4s; }
-  #slideset > *:nth-child(3) { animation-delay: 8s; }
+    #slideset > *:nth-child(1) { animation-delay: 0s; }
+    #slideset > *:nth-child(2) { animation-delay: 4s; }
+    #slideset > *:nth-child(3) { animation-delay: 8s; }
 
-  @keyframes slideLeft {
-    0% { left: 100%; opacity: 0; z-index: 1; }
-    4% { left: 0%; opacity: 1; z-index: 2; }
-    33.33% { left: 0%; opacity: 1; z-index: 2; }
-    37.33% { left: -100%; opacity: 0; z-index: 1; }
-    100% { left: -100%; opacity: 0; z-index: 1; }
-  }
-</style>
-
+    @keyframes slideLeft {
+      0% { left: 100%; opacity: 0; z-index: 1; }
+      4% { left: 0%; opacity: 1; z-index: 2; }
+      33.33% { left: 0%; opacity: 1; z-index: 2; }
+      37.33% { left: -100%; opacity: 0; z-index: 1; }
+      100% { left: -100%; opacity: 0; z-index: 1; }
+    }
+  </style>
 </head>
 
 <body class="bg-white font-sans text-gray-800">
 
   <!-- HEADER -->
-  <header class="bg-[#0f172a] text-[#f8fafc] px-6 py-4 shadow">
+  <header class="bg-[#a1b2d4] text-[#232946] px-6 py-4 shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="assets/brain-gym-logo.webp" alt="Brain Gym Logo" class="w-10 h-10 rounded-full" />
-        <h1 class="text-xl font-bold">Brain Gym</h1>
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/brain-gym-logo.webp" alt="Brain Gym Logo" class="w-10 h-10 rounded-full" />
+          <h1 class="text-xl font-bold">Brain Gym</h1>
+        </a>
       </div>
       <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#features" class="hover:text-[#06b6d4]">Features</a>
-        <a href="#screenshots" class="hover:text-[#06b6d4]">Screenshots</a>
-        <a href="blog.html" class="hover:text-[#06b6d4]">Blog</a>
-        <a href="#about" class="hover:text-[#06b6d4]">About</a>
-        <a href="#contact" class="hover:text-[#06b6d4]">Contact</a>
+  <a href="#features" class="hover:text-[#b6c9e9]">Features</a>
+  <a href="#screenshots" class="hover:text-[#b6c9e9] ">Screenshots</a>
+  <a href="blog.html" class="hover:text-[#b6c9e9]">Blog</a>
+  <a href="games.html" class="hover:text-[#b6c9e9]">Games</a>
+  <a href="#about" class="hover:text-[#b6c9e9]">About</a>
+  <a href="#contact" class="hover:text-[#b6c9e9]">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO SECTION -->
-<section class="bg-[#0f172a] text-[#f8fafc] px-6 py-12">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-
-    <!-- LEFT (now shown on top in mobile) -->
-    <div class="max-w-xl text-center md:text-left">
-      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Train Your Brain, Every Day</h1>
-      <p class="text-lg text-gray-300 mb-6">Daily challenges to sharpen your brain and track your progress.</p>
-
-      <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank"
-        class="bg-[#06b6d4] hover:bg-[#38bdf8] transition px-6 py-3 rounded-md font-semibold text-white text-lg mb-6 inline-block">
-        Start now
-      </a>
-
-      <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
-        <span class="text-yellow-400 text-xl">★ ★ ★ ★ ★</span>
-        <p class="text-sm text-gray-400">4.8 rating – 5,000+ users</p>
+  <section class="bg-[#f0f4ff] px-6 py-12 text-[#232946]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+      <!-- LEFT -->
+      <div class="max-w-xl text-center md:text-left">
+  <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-[#232946]">Train Your Brain, Every Day</h1>
+  <p class="text-lg text-[#232946] mb-6">Daily challenges to sharpen your brain and track your progress.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank"
+          class="bg-[#ffb347] hover:bg-[#232946] transition px-6 py-3 rounded-md font-semibold text-[#232946] hover:text-[#ffb347] text-lg mb-6 inline-block">
+          Start now
+        </a>
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
+          <span class="text-[#232946] text-xl">★ ★ ★ ★ ★</span>
+          <p class="text-sm text-white/70">4.8 rating – 5,000+ users</p>
+        </div>
+        <div class="flex justify-center md:justify-start gap-4 mt-2">
+          <img src="assets/satisfaction-badge.webp" alt="100% Satisfaction" class="h-20" />
+          <img src="assets/free-forever.png" alt="100% Free Forever" class="h-20" />
+        </div>
       </div>
 
-      <div class="flex justify-center md:justify-start gap-4 mt-2">
-        <img src="assets/satisfaction-badge.webp" alt="100% Satisfaction" class="h-20" />
-        <img src="assets/free-forever.png" alt="100% Free Forever" class="h-20" />
+      <!-- RIGHT -->
+      <div class="w-full md:w-1/2 relative">
+  <div id="slideset" class="max-w-sm mx-auto rounded">
+          <img src="assets/phone-mockup.webp" alt="Slide 1" class="object-contain w-full h-full" />
+          <img src="assets/phone-mockup1.webp" alt="Slide 2" class="object-contain w-full h-full" />
+          <img src="assets/phone-mockup2.webp" alt="Slide 3" class="object-contain w-full h-full" />
+        </div>
       </div>
     </div>
+  </section>
 
-<!-- RIGHT: Transparent Vertical Sliding Carousel -->
-<div class="w-full md:w-1/2 relative">
-  <div id="slideset" class="max-w-sm mx-auto rounded shadow">
-    <img src="assets/phone-mockup.webp" alt="Slide 1" class="object-contain w-full h-full" />
-    <img src="assets/phone-mockup1.webp" alt="Slide 2" class="object-contain w-full h-full" />
-    <img src="assets/phone-mockup2.webp" alt="Slide 3" class="object-contain w-full h-full" />
-  </div>
-</div>
-
-  </div>
-</section>
-
-
-  <!-- FEATURES SECTION -->
-  <section id="features" class="bg-gray-100 p-8 text-gray-800">
+  <!-- FEATURES -->
+  <section id="features" class="bg-[#c5d6e8] p-8 text-[#232946]">
     <h2 class="text-2xl font-semibold text-center mb-6">Features</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <div class="p-4 bg-white shadow rounded">
-        <h3 class="font-bold text-indigo-600">🎨 Color Challenge</h3>
+  <div class="p-4 rounded bg-transparent">
+  <h3 class="font-bold text-[#232946]">🎨 Color Challenge</h3>
         <p>Boost visual memory with pattern recognition games.</p>
       </div>
-      <div class="p-4 bg-white shadow rounded">
-        <h3 class="font-bold text-indigo-600">🧩 Memory Grid</h3>
+  <div class="p-4 rounded bg-transparent">
+  <h3 class="font-bold text-[#232946]">🧩 Memory Grid</h3>
         <p>Train short-term memory and logic through timed puzzles.</p>
       </div>
-      <div class="p-4 bg-white shadow rounded">
-        <h3 class="font-bold text-indigo-600">📈 Daily Progress</h3>
+  <div class="p-4 rounded bg-transparent">
+  <h3 class="font-bold text-[#232946]">📈 Daily Progress</h3>
         <p>Track your streaks, XP, and task completions visually.</p>
       </div>
     </div>
   </section>
 
-  <!-- SCREENSHOTS SECTION -->
-  <section id="screenshots" class="p-8 text-gray-800">
-  <h2 class="text-2xl font-semibold text-center mb-4">Screenshots</h2>
-
-  <!-- Mobile: Horizontal Scroll -->
-  <div class="md:hidden overflow-x-auto">
-    <div class="flex gap-4 w-max px-2">
-      <img src="assets/home-image.webp" alt="Home Screen"
-           class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
-      <img src="assets/progress-image.webp" alt="Progress Screen"
-           class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
-      <img src="assets/training-image.webp" alt="Training Screen"
-           class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
+  <!-- SCREENSHOTS -->
+  <section id="screenshots" class="bg-[#e0e3f2] p-8 text-[#232946]">
+    <h2 class="text-2xl font-semibold text-center mb-4">Screenshots</h2>
+    <!-- Mobile -->
+    <div class="md:hidden overflow-x-auto">
+      <div class="flex gap-4 w-max px-2">
+        <img src="assets/home-image.webp" alt="Home Screen" class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
+        <img src="assets/progress-image.webp" alt="Progress Screen" class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
+        <img src="assets/training-image.webp" alt="Training Screen" class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
+      </div>
     </div>
-  </div>
+    <!-- Desktop -->
+    <div class="hidden md:grid grid-cols-3 gap-6 max-w-5xl mx-auto mt-6">
+      <img src="assets/home-image.webp" alt="Home Screen" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+      <img src="assets/progress-image.webp" alt="Progress Screen" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+      <img src="assets/training-image.webp" alt="Training Screen" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+    </div>
+  </section>
 
-  <!-- Desktop: 3-column Grid -->
-  <div class="hidden md:grid grid-cols-3 gap-6 max-w-5xl mx-auto mt-6">
-    <img src="assets/home-image.webp" alt="Home Screen"
-         class="rounded shadow hover:scale-105 transition-transform duration-300" />
-    <img src="assets/progress-image.webp" alt="Progress Screen"
-         class="rounded shadow hover:scale-105 transition-transform duration-300" />
-    <img src="assets/training-image.webp" alt="Training Screen"
-         class="rounded shadow hover:scale-105 transition-transform duration-300" />
-  </div>
-</section>
-
-
-
-  <!-- CTA SECTION -->
-  <section class="bg-indigo-50 px-6 py-16 text-center">
+  <!-- CTA -->
+  <section class="bg-[#b6c9e9] px-6 py-16 text-center text-[#232946]">
     <div class="max-w-2xl mx-auto">
-      <h2 class="text-3xl font-extrabold text-indigo-900 mb-4">Ready to Train Your Brain?</h2>
-      <p class="text-gray-600 text-lg mb-6">
-        Join thousands of users improving memory, focus, and logic through daily brain workouts.
-        Completely free, no sign-up required.
-      </p>
+  <h2 class="text-3xl font-extrabold text-[#232946] mb-4">Ready to Train Your Brain?</h2>
+      <p class="text-gray-700 text-lg mb-6">Join thousands of users improving memory, focus, and logic through daily brain workouts.</p>
       <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank">
-        <img src="assets/google-play-badge_locale_en.webp" alt="Get it on Google Play"
-          class="mx-auto w-52 hover:scale-105 transition-transform duration-200" />
+        <img src="assets/google-play-badge_locale_en.webp" alt="Get it on Google Play" class="mx-auto w-52 hover:scale-105 transition-transform duration-200" />
       </a>
     </div>
   </section>
 
-
-  <!-- ABOUT THE CREATORS -->
-  <section id="about" class="bg-white py-12 text-center text-gray-800">
+  <!-- ABOUT -->
+  <section id="about" class="bg-[#f0f4ff] py-12 text-center text-[#232946]">
     <h2 class="text-2xl font-bold mb-4">About the Creators</h2>
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
-
-      <!-- Abhilash -->
       <div>
         <img src="assets/dev-avatar.webp" alt="Abhilash Avatar" class="w-24 h-24 mx-auto rounded-full shadow mb-4" />
         <p class="text-lg font-semibold">Abhilash Asok</p>
         <p class="text-sm text-gray-600 mb-1">Senior System Engineer • Android Enthusiast</p>
-        <p class="text-sm text-gray-500 mb-4">📍 Bangalore, India | London, United Kingdom</p>
-        <p class="text-gray-700">
-          I created Brain Gym to blend gamification with mental wellness. It’s designed to help anyone build habits and
-          stay mentally active through daily challenges.
-        </p>
+        <p class="text-sm text-gray-500 mb-4">📍 Bangalore, India | London, UK</p>
+        <p class="text-gray-700">I created Brain Gym to blend gamification with mental wellness.</p>
       </div>
-
-      <!-- Devika -->
       <div>
         <img src="assets/devika-avatar.webp" alt="Devika Avatar" class="w-24 h-24 mx-auto rounded-full shadow mb-4" />
         <p class="text-lg font-semibold">Devika Abhilash</p>
         <p class="text-sm text-gray-600 mb-1">Graphics Designer • UI Creative</p>
         <p class="text-sm text-gray-500 mb-4">📍 India</p>
-        <p class="text-gray-700">
-          I crafted Brain Gym’s visual identity to be clean, calming, and inspiring—making every session feel rewarding
-          and intuitive for the user.
-        </p>
+        <p class="text-gray-700">I crafted Brain Gym’s visual identity to be clean, calming, and inspiring.</p>
       </div>
-
     </div>
   </section>
 
-
-
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="bg-gray-100 py-12 px-4 text-center text-gray-800">
+  <!-- CONTACT -->
+  <section id="contact" class="bg-[#c5d6e8] py-12 px-4 text-center text-[#232946]">
     <h2 class="text-2xl font-bold mb-2">Contact</h2>
-    <p class="text-gray-700">
-      Reach out anytime at
-      <a href="mailto:abhilashpa39@gmail.com" class="text-indigo-600 underline">abhilashpa39@gmail.com</a>
-    </p>
+    <p class="text-gray-700">Reach out anytime at <a href="mailto:abhilashpa39@gmail.com" class="text-[#5680E9] underline">abhilashpa39@gmail.com</a></p>
   </section>
 
-<section class="bg-indigo-50 py-16 px-4">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-4">Discover More with Brain Gym</h2>
-    <p class="text-gray-600 text-lg mb-10">
-      Explore tools, guides, and tips to improve focus, memory, and mental sharpness every day.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      <div tabindex="0"
-     class="bg-yellow-50 p-6 rounded shadow hover:shadow-lg transition outline-none">
-  <h3 class="text-xl font-semibold text-indigo-700 mb-2">Brain Training Guide</h3>
-  <p class="text-gray-600 text-sm mb-4">
-    Dive deeper into the science and strategy behind daily cognitive workouts.
-  </p>
-  <a href="brain-training-guide.html" class="text-indigo-600 text-sm underline font-medium">Read Now →</a>
-</div>
-
-      <div class="bg-blue-100 p-6 rounded shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-indigo-900 mb-2">Our Blog</h3>
-        <p class="text-gray-700 text-sm mb-4">Explore articles on memory tips, habit-building, and gamified learning.</p>
-        <a href="blog.html" class="text-indigo-800 text-sm underline font-medium">Visit Blog →</a>
+  <!-- DISCOVER MORE -->
+  <section class="bg-[#a1b2d4] py-16 px-4 text-[#232946]">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Discover More with Brain Gym</h2>
+      <p class="text-lg mb-10">Explore tools, guides, and tips to improve focus, memory, and mental sharpness.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white text-gray-800 p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-[#232946] mb-2">Brain Training Guide</h3>
+          <p class="text-sm mb-4">Dive deeper into the strategy behind daily cognitive workouts.</p>
+          <a href="brain-training-guide.html" class="text-[#8860D0] text-sm underline font-medium">Read Now →</a>
+        </div>
+        <div class="bg-white text-gray-800 p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-[#232946] mb-2">Our Blog</h3>
+          <p class="text-sm mb-4">Explore articles on memory tips, habit-building, and gamified learning.</p>
+          <a href="blog.html" class="text-[#8860D0] text-sm underline font-medium">Visit Blog →</a>
+        </div>
+        <div class="bg-white text-gray-800 p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-[#232946] mb-2">Daily Challenges</h3>
+          <p class="text-sm mb-4">Take on curated daily tasks — just 5 minutes a day!</p>
+          <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" class="text-[#8860D0] text-sm underline font-medium" target="_blank">Download App →</a>
+        </div>
       </div>
-
-      <div class="bg-purple-100 p-6 rounded shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-indigo-900 mb-2">Daily Challenges</h3>
-        <p class="text-gray-700 text-sm mb-4">Take on curated daily tasks to sharpen your skills — only 5 minutes a day!</p>
-        <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank" class="text-indigo-800 text-sm underline font-medium">Download App →</a>
-      </div>
-
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-800 text-gray-300 text-center p-4">
-    <p>© 2025 Brain Gym | <a href="#" class="text-indigo-300 underline">GitHub</a></p>
+  <footer class="bg-[#a1b2d4] text-[#232946] text-center p-4">
+    <p>© 2025 Brain Gym | <a href="#" class="underline text-[#C1C8E4]">GitHub</a></p>
   </footer>
 
 </body>
-
 </html>

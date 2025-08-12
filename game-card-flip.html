@@ -93,60 +93,20 @@
 </head>
 <body>
   <h1>Memory Game</h1>
-  <div class="scoreboard" id="scoreboard">Moves: 0</div>
+  <div class="scoreboard">Score: <span id="score">0</span></div>
   <div class="game-board" id="game-board"></div>
-
-  <button id="help-button" onclick="showInstructions()">?</button>
-
-  <div class="dialog" id="instructions-dialog">
+  <div class="dialog" id="dialog">
     <div class="dialog-content">
-      <h3>How to Play</h3>
-      <p>Match all pairs by remembering and flipping cards. Fewer moves means a better score!</p>
-      <button onclick="hideInstructions()">Close</button>
+      <h2>Congratulations!</h2>
+      <p>You matched all the cards!</p>
+      <button onclick="window.location.reload()">Play Again</button>
     </div>
   </div>
-
-    <div class="dialog" id="completion-dialog" style="display:none;">
-  <div class="dialog-content">
-    <h3>Congratulations!</h3>
-    <p>You completed the game in <span id="final-moves"></span> moves.</p>
-    <div style="display: flex; margin-top: 15px;">
-  <button onclick="restartGame()" style="
-    flex: 1;
-    height: 40px;
-    background-color: #4285f4;
-    color: white;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    font-size: 14px;
-    cursor: pointer;
-  ">Play Again</button>
-
-  <button onclick="location.href='#'" style="
-    flex: 1;
-    height: 40px;
-    background-color: #6c757d;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 14px;
-    cursor: pointer;
-  ">Back</button>
-</div>
-
-  </div>
-</div>
-
-
-
-
-
+  <button id="help-button" title="Help">?</button>
   <script>
     const board = document.getElementById('game-board');
-    const scoreboard = document.getElementById('scoreboard');
-    const instructionsDialog = document.getElementById('instructions-dialog');
-    const completionDialog = document.getElementById('completion-dialog');
-    const finalMovesText = document.getElementById('final-moves');
+    const scoreboard = document.getElementById('score');
+    const dialog = document.getElementById('dialog');
 
     const emojis = ['🍔','🍕','🍦','🍪','🍿','🍎','💚','🌸'];
     let deck = [];
@@ -174,7 +134,7 @@
           secondCard = card;
           lockBoard = true;
           moves++;
-          scoreboard.textContent = `Moves: ${moves}`;
+          scoreboard.textContent = moves;
 
           if (firstCard.dataset.content === secondCard.dataset.content) {
             firstCard.classList.add('matched');
@@ -183,8 +143,7 @@
             resetTurn();
             if (matchedPairs === emojis.length) {
               setTimeout(() => {
-                finalMovesText.textContent = moves;
-                completionDialog.style.display = 'flex';
+                dialog.style.display = 'flex';
               }, 500);
             }
           } else {
@@ -206,15 +165,6 @@
       lockBoard = false;
     }
 
-    function restartGame() {
-      completionDialog.style.display = 'none';
-      board.innerHTML = '';
-      moves = 0;
-      matchedPairs = 0;
-      scoreboard.textContent = 'Moves: 0';
-      initGame();
-    }
-
     function initGame() {
       deck = [...emojis, ...emojis].sort(() => Math.random() - 0.5);
       board.innerHTML = '';
@@ -222,14 +172,6 @@
         const card = createCard(emoji, i);
         board.appendChild(card);
       });
-    }
-
-    function showInstructions() {
-      instructionsDialog.style.display = 'flex';
-    }
-
-    function hideInstructions() {
-      instructionsDialog.style.display = 'none';
     }
 
     // Start game on load
