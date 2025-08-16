@@ -36,27 +36,72 @@
       37.33% { left: -100%; opacity: 0; z-index: 1; }
       100% { left: -100%; opacity: 0; z-index: 1; }
     }
+
+      /* Hamburger and drawer styles */
+      .drawer-bg {
+        background: rgba(0,0,0,0.3);
+      }
+      @media (max-width: 767px) {
+        .mobile-drawer {
+          transform: translateX(-100%);
+          transition: transform 0.3s;
+        }
+        .mobile-drawer.open {
+          transform: translateX(0);
+        }
+      }
   </style>
+
+    <script>
+      function toggleDrawer(open) {
+        const drawer = document.getElementById('mobile-drawer');
+        const overlay = document.getElementById('drawer-overlay');
+        if (open) {
+          drawer.classList.add('open');
+          overlay.classList.remove('hidden');
+        } else {
+          drawer.classList.remove('open');
+          overlay.classList.add('hidden');
+        }
+      }
+    </script>
 </head>
 
 <body class="bg-white font-sans text-gray-800">
 
   <!-- HEADER -->
   <header class="bg-[#a1b2d4] text-[#232946] px-6 py-4 shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between md:flex-row flex-row">
+      <!-- Hamburger for mobile left -->
+      <button class="md:hidden block text-3xl focus:outline-none mr-3" aria-label="Open navigation" onclick="toggleDrawer(true)">&#9776;</button>
+      <!-- Logo and name right on mobile, left on desktop -->
+      <div class="flex items-center gap-3 ml-auto">
         <a href="index.html" class="flex items-center gap-3">
           <img src="assets/brain-gym-logo.webp" alt="Brain Gym Logo" class="w-10 h-10 rounded-full" />
           <h1 class="text-xl font-bold">Brain Gym</h1>
         </a>
       </div>
-      <nav class="hidden md:flex gap-6 text-sm">
-  <a href="#features" class="hover:text-[#b6c9e9]">Features</a>
-  <a href="#screenshots" class="hover:text-[#b6c9e9] ">Screenshots</a>
-  <a href="blog.html" class="hover:text-[#b6c9e9]">Blog</a>
-  <a href="games.html" class="hover:text-[#b6c9e9]">Games</a>
-  <a href="#about" class="hover:text-[#b6c9e9]">About</a>
-  <a href="#contact" class="hover:text-[#b6c9e9]">Contact</a>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex gap-6 text-sm ml-6">
+        <a href="#features" class="hover:text-[#b6c9e9]">Features</a>
+        <a href="#screenshots" class="hover:text-[#b6c9e9] ">Screenshots</a>
+        <a href="blog.html" class="hover:text-[#b6c9e9]">Blog</a>
+        <a href="games.html" class="hover:text-[#b6c9e9]">Games</a>
+        <a href="#about" class="hover:text-[#b6c9e9]">About</a>
+        <a href="#contact" class="hover:text-[#b6c9e9]">Contact</a>
+      </nav>
+      <!-- Mobile drawer nav -->
+      <div id="drawer-overlay" class="fixed inset-0 z-40 hidden drawer-bg md:hidden" onclick="toggleDrawer(false)"></div>
+      <nav id="mobile-drawer" class="mobile-drawer fixed top-0 left-0 z-50 h-full w-[220px] bg-[#a1b2d4] shadow-lg p-6 md:hidden">
+        <button class="text-2xl mb-6 focus:outline-none" aria-label="Close navigation" onclick="toggleDrawer(false)">&times;</button>
+        <ul class="flex flex-col gap-4 text-base">
+          <li><a href="#features" class="hover:text-[#b6c9e9]" onclick="toggleDrawer(false)">Features</a></li>
+          <li><a href="#screenshots" class="hover:text-[#b6c9e9]" onclick="toggleDrawer(false)">Screenshots</a></li>
+          <li><a href="blog.html" class="hover:text-[#b6c9e9]" onclick="toggleDrawer(false)">Blog</a></li>
+          <li><a href="games.html" class="hover:text-[#b6c9e9]" onclick="toggleDrawer(false)">Games</a></li>
+          <li><a href="#about" class="hover:text-[#b6c9e9]" onclick="toggleDrawer(false)">About</a></li>
+          <li><a href="#contact" class="hover:text-[#b6c9e9]" onclick="toggleDrawer(false)">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
