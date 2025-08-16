@@ -6,19 +6,44 @@
   <title>Brain Gym Blog</title>
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Mobile drawer styles for blog header */
+    .drawer-bg { background: rgba(0,0,0,0.3); }
+    @media (max-width: 767px) {
+      .mobile-drawer { transform: translateX(-100%); transition: transform 0.25s; }
+      .mobile-drawer.open { transform: translateX(0); }
+    }
+  </style>
+  <script>
+    function toggleBlogDrawer(open) {
+      const drawer = document.getElementById('blog-mobile-drawer');
+      const overlay = document.getElementById('blog-drawer-overlay');
+      if (open) { drawer.classList.add('open'); overlay.classList.remove('hidden'); }
+      else { drawer.classList.remove('open'); overlay.classList.add('hidden'); }
+    }
+  </script>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- HEADER -->
   <header class="bg-[#43B581] text-white px-6 py-4 shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
+      <button class="md:hidden block text-3xl mr-3" aria-label="Open navigation" onclick="toggleBlogDrawer(true)">&#9776;</button>
+      <a href="index.html" class="flex items-center gap-3 md:order-1 order-2 md:ml-0 ml-auto">
         <img src="assets/brain-gym-logo.webp" alt="Brain Gym Logo" class="w-10 h-10 rounded-full" />
         <h1 class="text-2xl font-bold">Brain Gym Blog</h1>
       </a>
-      <nav class="hidden md:flex gap-6 text-sm">
-  <a href="index.html" class="hover:text-[#1E90FF]">Home</a>
-  <a href="#posts" class="hover:text-[#1E90FF]">Posts</a>
+      <nav class="hidden md:flex gap-6 text-sm md:order-2 order-3">
+        <a href="index.html" class="hover:text-[#1E90FF]">Home</a>
+        <a href="#posts" class="hover:text-[#1E90FF]">Posts</a>
+      </nav>
+      <div id="blog-drawer-overlay" class="fixed inset-0 z-40 hidden drawer-bg md:hidden" onclick="toggleBlogDrawer(false)"></div>
+      <nav id="blog-mobile-drawer" class="mobile-drawer fixed top-0 left-0 z-50 h-full w-[220px] bg-[#43B581] text-white shadow-lg p-6 md:hidden">
+        <button class="text-2xl mb-6 focus:outline-none" aria-label="Close navigation" onclick="toggleBlogDrawer(false)">&times;</button>
+        <ul class="flex flex-col gap-4 text-base">
+          <li><a href="index.html" class="hover:text-[#C1F0D6]" onclick="toggleBlogDrawer(false)">Home</a></li>
+          <li><a href="#posts" class="hover:text-[#C1F0D6]" onclick="toggleBlogDrawer(false)">Posts</a></li>
+        </ul>
       </nav>
     </div>
   </header>
