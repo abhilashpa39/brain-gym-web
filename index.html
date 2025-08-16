@@ -71,18 +71,18 @@
 
   <!-- HEADER -->
   <header class="bg-[#a1b2d4] text-[#232946] px-6 py-4 shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between md:flex-row flex-row">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
       <!-- Hamburger for mobile left -->
-      <button class="md:hidden block text-3xl focus:outline-none mr-3" aria-label="Open navigation" onclick="toggleDrawer(true)">&#9776;</button>
-      <!-- Logo and name right on mobile, left on desktop -->
-      <div class="flex items-center gap-3 ml-auto">
+      <button class="md:hidden block text-3xl focus:outline-none mr-3 order-1" aria-label="Open navigation" onclick="toggleDrawer(true)">&#9776;</button>
+      <!-- Logo and name: left on desktop, right on mobile -->
+      <div class="flex items-center gap-3 order-2 md:order-1 md:ml-0 ml-auto">
         <a href="index.html" class="flex items-center gap-3">
           <img src="assets/brain-gym-logo.webp" alt="Brain Gym Logo" class="w-10 h-10 rounded-full" />
           <h1 class="text-xl font-bold">Brain Gym</h1>
         </a>
       </div>
       <!-- Desktop nav -->
-      <nav class="hidden md:flex gap-6 text-sm ml-6">
+      <nav class="hidden md:flex gap-6 text-sm ml-6 order-3">
         <a href="#features" class="hover:text-[#b6c9e9]">Features</a>
         <a href="#screenshots" class="hover:text-[#b6c9e9] ">Screenshots</a>
         <a href="blog.html" class="hover:text-[#b6c9e9]">Blog</a>
