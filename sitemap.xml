@@ -1,19 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://abhilashpa39.github.io/brain-gym-web/</loc>
+    <loc>https://braingym.blog/</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://abhilashpa39.github.io/brain-gym-web/blog.html</loc>
-    <priority>0.8</priority>
+    <loc>https://braingym.blog/blog.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
+
   <url>
-    <loc>https://abhilashpa39.github.io/brain-gym-web/post-brain-training.html</loc>
-    <priority>0.6</priority>
+    <loc>https://braingym.blog/post-brain-training.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
+
   <url>
-    <loc>https://abhilashpa39.github.io/brain-gym-web/post-gamification.html</loc>
-    <priority>0.6</priority>
+    <loc>https://braingym.blog/post-gamification.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://braingym.blog/brain-training-guide.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://braingym.blog/games.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://braingym.blog/privacy.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <url>
+    <loc>https://braingym.blog/terms.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
   </url>
 </urlset>

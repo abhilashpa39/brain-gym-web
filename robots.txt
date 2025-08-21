@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abhilashpa39.github.io/brain-gym-web/sitemap.xml
+Sitemap: https://braingym.blog/sitemap.xml

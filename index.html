@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Brain Gym</title>
+  
+  <!-- Canonical + SEO basics -->
+  <title>Free Memory Games & Brain Games App | Brain Gym</title>
+  <meta name="description" content="Play free memory games and brain games with Brain Gym. Daily challenges to improve memory, focus, and logic—no sign-up required. Download on Google Play." />
+  <link rel="canonical" href="https://braingym.blog/" />
+  
   <!-- PWA manifest (controls Android install icon) -->
   <link rel="manifest" href="manifest.webmanifest?v=2">
   <meta name="theme-color" content="#232946" />
@@ -12,10 +17,29 @@
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+  
   <!-- iOS Home Screen icon -->
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-180.png" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <!-- Open Graph (Facebook/LinkedIn/etc.) -->
+  <meta property="og:title" content="Brain Gym — Free Memory Games & Brain Training" />
+  <meta property="og:description" content="Play free memory games and brain games. Build daily habits to boost focus, recall, and logic." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://braingym.blog/" />
+  <meta property="og:image" content="https://braingym.blog/assets/og-cover.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Brain Gym" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Brain Gym — Free Memory Games & Brain Training" />
+  <meta name="twitter:description" content="Quick daily brain workouts with free memory games and brain games." />
+  <meta name="twitter:image" content="https://braingym.blog/assets/og-cover.webp" />
+  
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -62,6 +86,27 @@
       });
     });
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Brain Gym",
+  "description": "Free memory games and brain games to improve memory, focus, and logic with quick daily training.",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Android",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "url": "https://braingym.blog/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.abhilash.braingym",
+  "image": "https://braingym.blog/assets/og-cover.webp",
+  "publisher": { "@type": "Organization", "name": "Brain Gym" },
+  "sameAs": [
+    "https://play.google.com/store/apps/details?id=com.abhilash.braingym"
+  ]
+}
+</script>
+
+
 </head>
 
 <body class="bg-white font-sans text-gray-800">
@@ -104,7 +149,7 @@
   </header>
 
   <!-- HERO SECTION: Mobile Only -->
-  <section class="block md:hidden relative w-full h-[400px] min-h-[320px]">
+  <section class="block md:hidden relative w-full h-[400px] min-h-[420px]">
     <!-- Single background video -->
     <div class="absolute inset-0 w-full h-full z-0">
       <video
@@ -128,8 +173,8 @@
     <!-- Content -->
     <div class="absolute inset-0 z-20 flex flex-col items-center justify-center w-full h-full px-4 text-center">
       <div class="bg-[#232946]/50 rounded-xl p-5 max-w-xs w-full mx-auto shadow-lg">
-        <h1 class="text-2xl font-extrabold mb-3 text-white">Train Your Brain, Every Day</h1>
-        <p class="text-base text-white mb-5">Sharpen your mind with daily challenges and track your progress on the go.</p>
+        <h1 class="text-2xl font-extrabold mb-3 text-white">Free Memory Games & Brain Games – Train Your Brain Daily</h1>
+        <p class="text-base text-white mb-5">Brain Gym offers free <strong>memory games</strong> and fun <strong>brain games</strong> to sharpen recall, attention, and problem-solving—designed for quick daily sessions.</p>
         <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank"
            class="bg-[#ffb347] hover:bg-[#232946] transition px-6 py-3 rounded-md font-semibold text-[#232946] hover:text-[#ffb347] text-lg mb-4 inline-block">
           Start now
@@ -147,7 +192,7 @@
   </section>
 
   <!-- HERO SECTION: Desktop Only -->
-  <section class="hidden md:block relative w-full h-[75vh]" style="min-height: 520px;">
+  <section class="hidden md:block relative w-full h-[75vh]" style="min-height: 620px;">
     <!-- Same single video used on desktop -->
     <div class="absolute inset-0 w-full h-full z-0">
       <video
@@ -168,8 +213,8 @@
 
     <div class="absolute inset-0 z-20 flex flex-col items-center justify-center w-full h-full px-4">
       <div class="bg-[#232946]/50 rounded-xl p-8 max-w-xl text-center shadow-lg">
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-white">Train Your Brain, Every Day</h1>
-        <p class="text-lg text-white mb-6">Daily challenges to sharpen your brain and track your progress.</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-white">Free Memory Games & Brain Games – Train Your Brain Daily</h1>
+        <p class="text-lg text-white mb-6">Brain Gym offers free <strong>memory games</strong> and fun <strong>brain games</strong> to sharpen recall, attention, and problem-solving—designed for quick daily sessions.</p>
         <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank"
            class="bg-[#ffb347] hover:bg-[#232946] transition px-6 py-3 rounded-md font-semibold text-[#232946] hover:text-[#ffb347] text-lg mb-6 inline-block">
           Start now
@@ -188,33 +233,68 @@
 
   <!-- FEATURES -->
   <section id="features" class="bg-[#c5d6e8] p-8 text-[#232946]">
-    <h2 class="text-2xl font-semibold text-center mb-6">Features</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <div class="p-4 rounded bg-transparent">
-        <h3 class="font-bold text-[#232946]">🎨 Color Challenge</h3>
-        <p>Boost visual memory with pattern recognition games.</p>
-      </div>
-      <div class="p-4 rounded bg-transparent">
-        <h3 class="font-bold text-[#232946]">🧩 Memory Grid</h3>
-        <p>Train short-term memory and logic through timed puzzles.</p>
-      </div>
-      <div class="p-4 rounded bg-transparent">
-        <h3 class="font-bold text-[#232946]">📈 Daily Progress</h3>
-        <p>Track your streaks, XP, and task completions visually.</p>
-      </div>
+  <h2 class="text-2xl font-semibold text-center mb-6">
+    Free Memory Games: Features That Train Your Brain
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+    <div class="p-4 rounded bg-transparent">
+      <h3 class="font-bold text-[#232946]">🎨 Color Challenge</h3>
+      <p>
+        A fast-paced <strong>memory game</strong> that strengthens attention and recall with pattern
+        and color matching—perfect for daily <em>brain games</em> sessions.
+      </p>
     </div>
-  </section>
+
+    <div class="p-4 rounded bg-transparent">
+      <h3 class="font-bold text-[#232946]">🧩 Memory Grid</h3>
+      <p>
+        Build working memory and spatial recall through timed sequences. These
+        <strong>free memory games</strong> scale in difficulty as your skills improve.
+      </p>
+    </div>
+
+    <div class="p-4 rounded bg-transparent">
+      <h3 class="font-bold text-[#232946]">📈 Daily Progress</h3>
+      <p>
+        Track streaks, XP, and key skills to turn memory training into a simple habit—just a few
+        minutes of engaging <em>brain games</em> each day.
+      </p>
+    </div>
+  </div>
+
+  <!-- SEO long-tail explainer + internal links -->
+  <div class="max-w-4xl mx-auto mt-6 text-center">
+    <h3 class="text-xl font-semibold mb-2">What are memory games?</h3>
+    <p class="text-[#232946]/80">
+      Memory games are short, focused challenges that train recall, attention, and working memory.
+      Brain Gym includes <strong>free memory games</strong> for adults and kids alongside fun
+      <em>brain games</em> to boost focus and logic. Try a 5-minute session daily to build lasting
+      cognitive habits.
+    </p>
+    <p class="mt-4">
+      <a href="post-brain-training.html" class="text-[#5680E9] underline">Learn how memory games improve recall</a>
+      ·
+      <a href="post-gamification.html" class="text-[#5680E9] underline">Best brain games for daily focus</a>
+    </p>
+  </div>
+</section>
+
 
   <!-- SCREENSHOTS -->
   <section id="screenshots" class="bg-[#e0e3f2] p-8 text-[#232946]">
-    <h2 class="text-2xl font-semibold text-center mb-4">Screenshots</h2>
+    <h2 class="text-2xl font-semibold text-center mb-4">Brain Gym App Screenshots</h2>
     <!-- Mobile -->
     <div class="md:hidden overflow-x-auto">
       <div class="flex gap-4 w-max px-2">
-        <img src="assets/home-image.webp" alt="Home Screen" class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
-        <img src="assets/progress-image.webp" alt="Progress Screen" class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
-        <img src="assets/training-image.webp" alt="Training Screen" class="w-40 h-auto rounded shadow hover:scale-105 transition-transform duration-300" />
-      </div>
+        <img src="assets/home-image.webp" width="800" height="1600" loading="lazy" decoding="async"
+     alt="Brain Gym memory games app – home screen" class="rounded shadow scroll-fade-up" />
+<img src="assets/progress-image.webp" width="800" height="1600" loading="lazy" decoding="async"
+     alt="Brain Gym brain games progress and streaks" class="rounded shadow scroll-fade-up" />
+<img src="assets/training-image.webp" width="800" height="1600" loading="lazy" decoding="async"
+     alt="Memory game training session in Brain Gym" class="rounded shadow scroll-fade-up" />
+
+	  </div>
     </div>
     <!-- Desktop -->
     <div class="hidden md:grid grid-cols-3 gap-6 max-w-5xl mx-auto mt-6">
@@ -228,7 +308,7 @@
   <section class="bg-[#b6c9e9] px-6 py-16 text-center text-[#232946]">
     <div class="max-w-2xl mx-auto">
       <h2 class="text-3xl font-extrabold text-[#232946] mb-4">Ready to Train Your Brain?</h2>
-      <p class="text-gray-700 text-lg mb-6">Join thousands of users improving memory, focus, and logic through daily brain workouts.</p>
+      <p class="text-gray-700 text-lg mb-6">Download Brain Gym for free memory games and engaging brain games. Build daily habits that boost focus, recall, and logic.</p>
       <a href="https://play.google.com/store/apps/details?id=com.abhilash.braingym" target="_blank">
         <img src="assets/google-play-badge_locale_en.webp" alt="Get it on Google Play" class="mx-auto w-52 hover:scale-105 transition-transform duration-200" />
       </a>
@@ -286,6 +366,26 @@
       </div>
     </div>
   </section>
+  <section class="bg-[#f7f8ff] px-6 py-12 text-[#232946]" id="faq">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6">Memory Games FAQ</h2>
+    <div class="space-y-5">
+      <div>
+        <h3 class="font-semibold">Are the memory games free?</h3>
+        <p>Yes. Brain Gym’s memory games and brain games are 100% free with no sign-up required.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">Who are these brain games for?</h3>
+        <p>For all ages. Short daily sessions help adults and students improve memory, focus, and problem-solving.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">How often should I train?</h3>
+        <p>We recommend 5–10 minutes per day for consistent cognitive benefits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- FOOTER -->
 <footer class="bg-[#a1b2d4] text-black text-center p-4">
@@ -297,6 +397,17 @@
   </p>
 </footer>
 
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {"@type":"Question","name":"Are the memory games free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Brain Gym’s memory games and brain games are 100% free with no sign-up required."}},
+  {"@type":"Question","name":"Who are these brain games for?","acceptedAnswer":{"@type":"Answer","text":"For all ages. Short daily sessions help adults and students improve memory, focus, and problem-solving."}},
+  {"@type":"Question","name":"How often should I train?","acceptedAnswer":{"@type":"Answer","text":"We recommend 5–10 minutes per day for consistent cognitive benefits."}}
+ ]
+}
+</script>
 
 
 </body>
